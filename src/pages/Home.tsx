@@ -2,6 +2,7 @@
 import HeroSlider from '../components/HeroSlider';
 import StatsSection from '../components/StatsSection';
 import OfferingsSection from '../components/OfferingsSection';
+import EventsSection from '../components/EventsSection';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
@@ -17,12 +18,6 @@ const Home = () => {
             {/* Hero Section */}
             <HeroSlider />
 
-            {/* Stats Section */}
-            <StatsSection />
-
-            {/* Offerings Content */}
-            <OfferingsSection />
-
             {/* Leadership Preview Section */}
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
@@ -36,8 +31,8 @@ const Home = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                         {[
-                            { src: '/members/uploaded_media_0_1769412046397.jpg', name: 'Rahul Singh Sarkar', role: 'Chairman - BT10PL', position: 'top' },
-                            { src: '/members/uploaded_media_1_1769412046397.jpg', name: 'Dr. Vikash Kumar', role: 'President - T10TBCAB', position: 'top' },
+                            { src: '/members/uploaded_media.jpeg', name: 'Dr. Vikash Kumar', role: ' Vice Chairman - BT10PL & President  T10TBCAB', position: 'top' },
+                            { src: '/members/uploaded_media_0_1769412046397.jpg', name: 'Rahul Singh Sarkar', role: 'Chairman - BT10PL & G. Secretary T10TBCAB', position: 'top' },
                             { src: '/members/uploaded_media_2_1769412046397.jpg', name: 'Anisha Kumari', role: 'Treasurer - T10TBCAB', position: 'center' }
                         ].map((leader, index) => (
                             <div key={index} className="group relative overflow-hidden rounded-2xl shadow-xl h-[400px] cursor-pointer">
@@ -67,6 +62,18 @@ const Home = () => {
                 </div>
             </section>
 
+
+
+            {/* Offerings Content */}
+            <OfferingsSection />
+
+            {/* Events Section */}
+            <EventsSection />
+
+            {/* Stats Section */}
+            <StatsSection />
+
+
             {/* CTA Section */}
             <section className="bg-brand-dark text-white py-20 relative overflow-hidden">
                 {/* Background Pattern */}
@@ -83,12 +90,14 @@ const Home = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <Link
-                            to="/contact"
+                        <a
+                            href="https://forms.gle/Qjeto8PoEMhWUJea8"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="px-8 py-4 bg-brand-red text-white font-bold rounded-lg text-lg hover:bg-red-600 transition-colors flex items-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                         >
                             Register Now <ArrowRight className="ml-2 h-5 w-5" />
-                        </Link>
+                        </a>
                         <Link
                             to="/contact"
                             className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-lg text-lg hover:bg-white hover:text-brand-dark transition-colors flex items-center"

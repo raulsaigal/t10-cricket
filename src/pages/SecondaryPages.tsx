@@ -40,7 +40,9 @@ const galleryImages = [
     press1, press2, press3, press4, press5
 ];
 
-import { Target, Eye, Heart, Trophy, Users, Award, Calendar } from 'lucide-react';
+
+import { Target, Eye, Heart, Trophy, Users, Award, Calendar, MapPin, Phone, Mail, Building, User } from 'lucide-react';
+
 
 export const About = () => {
     // Animation variants
@@ -60,7 +62,7 @@ export const About = () => {
         <div className="min-h-screen bg-gray-50">
             <SEO
                 title="About T10 Tennis Ball Cricket Association of Bihar – Vision, Mission & Values"
-                description="Learn about our journey from the ground to winning stages in Bihar cricket. Discover our vision, mission, values, and dedication to promoting tennis ball cricket across Bihar."
+                description="Learn about our journey from the ground to winning stages in Bihar cricket. Discover our vision, mission, values, and dedication to promoting tennis and leather ball cricket across Bihar."
             />
             {/* Hero Banner */}
             <div className="relative h-[60vh] flex items-center justify-center overflow-hidden">
@@ -96,7 +98,7 @@ export const About = () => {
             <div className="py-20 px-4 max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative -mt-32 z-20">
                     {[
-                        { icon: <Eye className="w-10 h-10" />, title: "Our Vision", desc: "To become the premier platform for tennis cricket, discovering and nurturing raw talent across every corner of the nation." },
+                        { icon: <Eye className="w-10 h-10" />, title: "Our Vision", desc: "To become the premier platform for tennis and leather ball cricket, discovering and nurturing raw talent across every corner of the nation." },
                         { icon: <Target className="w-10 h-10" />, title: "Our Mission", desc: "Empowering athletes with world-class facilities, professional training, and opportunities to shine on the biggest stages." },
                         { icon: <Heart className="w-10 h-10" />, title: "Our Values", desc: "Integrity, Passion, and Inclusivity using sports as a medium to build character and community unity." }
                     ].map((item, index) => (
@@ -194,62 +196,108 @@ export const About = () => {
 };
 
 const memberImages = [
-    { src: '/members/uploaded_media_0_1769412046397.jpg', name: 'Rahul Singh Sarkar', role: 'Chairman - BT10PL & G. Secretary T10TBCAB', position: 'top' },
-    { src: '/members/uploaded_media_1_1769412046397.jpg', name: 'Dr. Vikash Kumar', role: 'Vice Chairman - BT10PL & President T10TBCAB', position: 'top' },
-    { src: '/members/uploaded_media_2_1769412046397.jpg', name: 'Anisha Kumari', role: 'Treasurer T10TBCAB', position: 'center' },
-    { src: '/members/uploaded_media_3_1769412046397.jpg', name: 'Sameer Srivastava', role: 'Mentor', position: 'top' },
-    { src: '/members/uploaded_media_4_1769412046397.jpg', name: 'Komal Kumari', role: 'Club Representative', position: 'top' },
-    { src: '/members/uploaded_media_0_1769412998928.jpg', name: 'Majhil Singh', role: 'Vice President', position: 'top' },
-    { src: '/members/uploaded_media_1_1769412998928.jpg', name: 'Pritesh Kumar', role: 'Executive Member', position: 'top' },
-    { src: '/members/uploaded_media_2_1769412998928.jpg', name: 'Pradeep Ranjan', role: 'Media Incharge', position: 'top' },
-    { src: '/members/uploaded_media_3_1769412998928.jpg', name: 'Manoj Kr. Sinha', role: 'Mentor', position: 'top' },
-    { src: '/members/uploaded_media_4_1769412998928.jpg', name: 'Association Member', role: 'Member', position: 'center' },
+    { src: '/members/uploaded_media 2.jpeg', name: 'Mr.Alok Anjan', role: 'CHAIRPERSON', position: 'top' },
+    { src: '/members/uploaded_media.jpeg', name: 'Dr. Vikash Kumar', role: 'VICE CHAIRMAN - BT10PL & PRESIDENT T10TBCAB', position: 'top' },
+    { src: '/members/uploaded_media_0_1769412998928.jpg', name: 'Majhil Singh', role: 'VICE PRESIDENT', position: 'top' },
+    { src: '', name: 'Dr. Vijay Kumar Gupta', role: 'VICE PRESIDENT', position: 'top' },
+    { src: '/members/uploaded_media_0_1769412046397.jpg', name: 'Rahul Singh Sarkar', role: 'VICE CHAIRMAN - BT10PL & SECRETARY T10TBCAB', position: 'top' },
+    { src: '', name: 'Pankaj Prakash', role: 'JOINT SECRETARY', position: 'top' },
+    { src: '/members/uploaded_media_2_1769412046397.jpg', name: 'Anisha Kumari', role: 'TREASURER T10TBCAB', position: 'center' },
+    { src: '/members/uploaded_media_1.jpeg', name: 'Avinash Singh', role: 'CLUB REPRESENTATIVE', position: 'top' },
+    { src: '/members/uploaded_media 4.jpeg', name: 'Nisha Singh', role: 'CLUB REPRESENTATIVE', position: 'top' },
+    // { src: '/members/uploaded_media_1.jpeg', name: 'Nisha Singh', role: 'CLUB REPRESENTATIVE', position: 'top' },
+    { src: '/members/uploaded_media_4_1769412046397.jpg', name: 'Komal Kumari', role: 'CLUB REPRESENTATIVE', position: 'top' },
+    // { src: '', name: 'Komal Kumari', role: 'CLUB REPRESENTATIVE', position: 'top' },
+    { src: '/members/uploaded_media_3_1769412046397.jpg', name: 'Sameer Srivastava', role: 'MENTOR', position: 'top' },
+    { src: '/members/uploaded_media_3_1769412998928.jpg', name: 'Manoj Kr. Sinha', role: 'MENTOR', position: 'top' },
+    { src: '', name: 'Mr.Gaurav Ji', role: 'MENTOR', position: 'top' },
+    { src: '', name: 'Om Prakash Singh', role: 'MENTOR', position: 'top' },
+    { src: '/members/uploaded_media_2_1769412998928.jpg', name: 'Pradeep Ranjan', role: 'MEDIA INCHARGE', position: 'top' },
+    { src: '', name: 'Krishna Kant', role: 'LEGAL ADVISOR', position: 'top' },
+    { src: '', name: 'Amit Upadhaya', role: 'EXECUTIVE MEMBER', position: 'center' },
+    { src: '/members/uploaded_media 3.jpeg', name: 'Anjali Kumari', role: 'EXECUTIVE MEMBER', position: 'center' },
+    { src: '', name: 'Pritesh Kumar', role: 'EXECUTIVE MEMBER', position: 'center' },
+    { src: '', name: 'Rajveer Kumar', role: 'EXECUTIVE MEMBERS', position: 'center' },
+    { src: '', name: 'Dr. Ramjee Prasad(Patna)', role: 'EXECUTIVE MEMBER', position: 'center' },
+    { src: '', name: 'Jitendra Biraji(Supaul)', role: 'EXECUTIVE MEMBER', position: 'center' },
 ];
 
-export const Members = () => (
-    <div className="min-h-screen py-20 bg-gray-50">
-        <SEO
-            title="Association Members – Bihar T10 Tennis Ball Cricket Association"
-            description="Meet the directors, coaches, and players of Bihar’s leading tennis ball cricket association. Explore profiles of key members shaping Bihar cricket tournaments and player growth."
-        />
-        <div className="max-w-7xl mx-auto px-4">
-            <div className="text-center mb-16">
-                <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">Association Members</h1>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Meet the dedicated team behind our success. Together, we drive the vision and future of cricket in Bihar.
-                </p>
-            </div>
+export const Members = () => {
+    const [activeFilter, setActiveFilter] = useState('All');
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                {memberImages.map((member, index) => (
-                    <motion.div
-                        key={index}
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: index * 0.1 }}
-                        className="group relative h-[400px] overflow-hidden rounded-2xl shadow-xl bg-white cursor-pointer"
-                    >
-                        <img
-                            src={member.src}
-                            alt={member.name}
-                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            style={{ objectPosition: member.position }}
-                        />
-                        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-90 transition-opacity duration-300" />
+    const filters = ['All', 'CLUB REPRESENTATIVES', 'MENTORS', 'EXECUTIVE MEMBER'];
 
-                        <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                            <h3 className="text-2xl font-bold text-white mb-1">{member.name}</h3>
-                            <p className="text-yellow-400 font-semibold text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
-                                {member.role}
-                            </p>
-                        </div>
-                    </motion.div>
-                ))}
+    const filteredMembers = memberImages.filter(member => {
+        if (activeFilter === 'All') return true;
+        if (activeFilter === 'CLUB REPRESENTATIVES') return member.role.includes('CLUB REPRESENTATIVE');
+        if (activeFilter === 'MENTORS') return member.role.includes('MENTOR');
+        if (activeFilter === 'EXECUTIVE MEMBER') return member.role.includes('EXECUTIVE MEMBER');
+        return true;
+    });
+
+    return (
+        <div className="min-h-screen py-20 bg-gray-50">
+            <SEO
+                title="Association Members – Bihar T10 Tennis Ball Cricket Association"
+                description="Meet the directors, coaches, and players of Bihar’s leading tennis ball cricket association. Explore profiles of key members shaping Bihar cricket tournaments and player growth."
+            />
+            <div className="max-w-7xl mx-auto px-4">
+                <div className="text-center mb-16">
+                    <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">Association Members</h1>
+                    <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+                        Meet the dedicated team behind our success. Together, we drive the vision and future of cricket in Bihar.
+                    </p>
+
+                    <div className="flex flex-wrap justify-center gap-4">
+                        {filters.map((filter) => (
+                            <button
+                                key={filter}
+                                onClick={() => setActiveFilter(filter)}
+                                className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${activeFilter === filter
+                                    ? 'bg-brand-blue text-white shadow-lg scale-105'
+                                    : 'bg-white text-gray-600 hover:bg-gray-100 hover:shadow-md'
+                                    }`}
+                            >
+                                {filter}
+                            </button>
+                        ))}
+                    </div>
+                </div>
+
+                <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <AnimatePresence mode='popLayout'>
+                        {filteredMembers.map((member) => (
+                            <motion.div
+                                layout
+                                key={member.name}
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                exit={{ opacity: 0, scale: 0.9 }}
+                                transition={{ duration: 0.3 }}
+                                className="group relative h-[400px] overflow-hidden rounded-2xl shadow-xl bg-white cursor-pointer"
+                            >
+                                <img
+                                    src={member.src}
+                                    alt={member.name}
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    style={{ objectPosition: member.position }}
+                                />
+                                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-90 transition-opacity duration-300" />
+
+                                <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                                    <h3 className="text-2xl font-bold text-white mb-1">{member.name}</h3>
+                                    <p className="text-yellow-400 font-semibold text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+                                        {member.role}
+                                    </p>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </AnimatePresence>
+                </motion.div>
             </div>
         </div>
-    </div>
-);
+    );
+};
 
 export const Gallery = () => {
     const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -393,89 +441,230 @@ export const Contact = () => {
                 description="Get in touch with Bihar’s tennis ball cricket association for tournament registrations, academy details, and player development opportunities. We respond within 24–48 hours."
             />
             <div className="max-w-7xl mx-auto px-4">
-                <h1 className="text-4xl font-bold text-brand-blue mb-8">Contact Us</h1>
-                <div className="bg-white p-8 rounded-lg shadow-md max-w-2xl">
-                    {isSubmitted ? (
-                        <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center animate-fade-in">
-                            <CheckCircle className="h-12 w-12 text-green-500 mx-auto mb-4" />
-                            <h3 className="text-lg font-bold text-green-800 mb-2">Thank you for your response!</h3>
-                            <p className="text-green-700">We will get back to you within 24–48 hours.</p>
-                            <button
-                                onClick={() => setIsSubmitted(false)}
-                                className="mt-6 text-sm text-green-600 hover:text-green-800 font-medium underline"
-                            >
-                                Send another message
-                            </button>
-                        </div>
-                    ) : (
-                        <form onSubmit={handleSubmit} className="space-y-6">
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700">Name <span className="text-red-500">*</span></label>
-                                <input
-                                    type="text"
-                                    name="name"
-                                    value={formData.name}
-                                    onChange={handleChange}
-                                    required
-                                    placeholder="Your Name"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-blue focus:ring focus:ring-brand-blue focus:ring-opacity-50 p-2 border"
-                                />
+                <h1 className="text-4xl font-bold text-brand-blue mb-8 text-center lg:text-left">Contact Us</h1>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+                    <div className="space-y-8">
+                        {/* T10 Association Office Card */}
+                        <motion.div
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                            className="bg-gradient-to-br from-brand-blue to-blue-900 text-white p-8 rounded-2xl shadow-2xl relative overflow-hidden"
+                        >
+                            {/* Background Decoration */}
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+                            <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-yellow/10 rounded-full -ml-32 -mb-32 blur-3xl"></div>
+
+                            <div className="relative z-10 space-y-8">
+                                <div className="text-center border-b border-white/20 pb-6">
+                                    <h2 className="text-3xl font-extrabold tracking-tight mb-2 uppercase">Office</h2>
+                                    <h3 className="text-lg font-semibold text-brand-yellow">T10 Tennis Ball Cricket Association of Bihar</h3>
+                                    <p className="text-xs text-gray-300 mt-2 italic">Member of - T10 Tennis Ball Cricket Association of India</p>
+                                    <p className="text-xs text-gray-300">Regd. No. LUC/06043/2023-24</p>
+                                </div>
+
+                                <div className="space-y-6">
+                                    <div className="flex items-start space-x-4 group">
+                                        <div className="bg-white/10 p-3 rounded-lg group-hover:bg-brand-yellow/20 transition-colors">
+                                            <Building className="w-6 h-6 text-brand-yellow" />
+                                        </div>
+                                        <div>
+                                            <p className="text-sm text-gray-400 font-medium uppercase tracking-wider">Head Office</p>
+                                            <p className="font-medium text-lg">Madhuri Bhawan, New Karman Tola, Ara</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex items-start space-x-4 group">
+                                        <div className="bg-white/10 p-3 rounded-lg group-hover:bg-brand-yellow/20 transition-colors">
+                                            <MapPin className="w-6 h-6 text-brand-yellow" />
+                                        </div>
+                                        <div>
+                                            <p className="text-sm text-gray-400 font-medium uppercase tracking-wider">Corporate Office</p>
+                                            <p className="font-medium text-lg">3rd Floor Parmar Complex, South Ramna Road, Ara</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex items-start space-x-4 group">
+                                        <div className="bg-white/10 p-3 rounded-lg group-hover:bg-brand-yellow/20 transition-colors">
+                                            <Phone className="w-6 h-6 text-brand-yellow" />
+                                        </div>
+                                        <div>
+                                            <p className="text-sm text-gray-400 font-medium uppercase tracking-wider">Contact</p>
+                                            <p className="font-medium text-lg tracking-wide">+91 87573 05645</p>
+                                            <p className="font-medium text-lg tracking-wide">+91 91234 80329</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex items-start space-x-4 group">
+                                        <div className="bg-white/10 p-3 rounded-lg group-hover:bg-brand-yellow/20 transition-colors">
+                                            <Mail className="w-6 h-6 text-brand-yellow" />
+                                        </div>
+                                        <div>
+                                            <p className="text-sm text-gray-400 font-medium uppercase tracking-wider">Email</p>
+                                            <a href="mailto:t10tbcabihar@gmail.com" className="font-medium text-lg hover:text-brand-yellow transition-colors">t10tbcabihar@gmail.com</a>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex items-start space-x-4 group pt-4 border-t border-white/20">
+                                        <div className="bg-white/10 p-3 rounded-lg group-hover:bg-brand-yellow/20 transition-colors">
+                                            <User className="w-6 h-6 text-brand-yellow" />
+                                        </div>
+                                        <div>
+                                            <p className="text-xl font-bold text-white">Rahul Singh Sarkar</p>
+                                            <p className="text-sm text-brand-yellow font-medium uppercase tracking-wider">General Secretary</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700">Phone Number <span className="text-red-500">*</span></label>
-                                <input
-                                    type="tel"
-                                    name="phone"
-                                    value={formData.phone}
-                                    onChange={handleChange}
-                                    required
-                                    placeholder="Your Phone Number"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-blue focus:ring focus:ring-brand-blue focus:ring-opacity-50 p-2 border"
-                                />
+                        </motion.div>
+
+                        {/* Rahul Enterprises Card */}
+                        <motion.div
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8, delay: 0.2 }}
+                            className="bg-gradient-to-br from-yellow-400 to-yellow-500 text-brand-blue p-8 rounded-2xl shadow-2xl relative overflow-hidden ring-4 ring-white"
+                        >
+                            <div className="relative z-10 space-y-6">
+                                <div className="text-center border-b border-brand-blue/20 pb-6">
+                                    <h2 className="text-3xl font-extrabold tracking-tight mb-2 uppercase drop-shadow-sm text-red-600">Office</h2>
+                                    <h3 className="text-2xl font-black text-brand-blue uppercase tracking-wide">Rahul Enterprises</h3>
+                                    <div className="mt-3 inline-block bg-brand-blue text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg">
+                                        GSTIN: 10ESAPS2769N3ZA
+                                    </div>
+                                </div>
+
+                                <div className="space-y-4">
+                                    <div className="flex items-center space-x-4 group bg-white/30 p-4 rounded-xl backdrop-blur-sm hover:bg-white/50 transition-all cursor-default">
+                                        <div className="bg-brand-blue p-3 rounded-full text-white shadow-lg">
+                                            <User className="w-6 h-6" />
+                                        </div>
+                                        <div>
+                                            <p className="text-sm text-brand-blue/70 font-bold uppercase">Proprietor</p>
+                                            <p className="text-xl font-black text-brand-red">Rahul Kr. Singh</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex items-center space-x-4 group bg-white/30 p-4 rounded-xl backdrop-blur-sm hover:bg-white/50 transition-all cursor-default">
+                                        <div className="bg-brand-blue p-3 rounded-full text-white shadow-lg">
+                                            <Phone className="w-6 h-6" />
+                                        </div>
+                                        <div>
+                                            <p className="text-sm text-brand-blue/70 font-bold uppercase">Contact</p>
+                                            <p className="text-xl font-bold text-gray-900">+91 87573 05645</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex items-center space-x-4 group bg-white/30 p-4 rounded-xl backdrop-blur-sm hover:bg-white/50 transition-all cursor-default">
+                                        <div className="bg-brand-blue p-3 rounded-full text-white shadow-lg">
+                                            <Building className="w-6 h-6" />
+                                        </div>
+                                        <div>
+                                            <p className="text-sm text-brand-blue/70 font-bold uppercase">Head Office</p>
+                                            <p className="text-lg font-bold text-gray-900 leading-tight">Madhuri Bhawan, New Karman Tola, Ara</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700">Email <span className="text-red-500">*</span></label>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    required
-                                    placeholder="Your Email Address"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-blue focus:ring focus:ring-brand-blue focus:ring-opacity-50 p-2 border"
-                                />
+                        </motion.div>
+                    </div>
+
+                    {/* Contact Form */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                        className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100"
+                    >
+                        <h3 className="text-2xl font-bold text-gray-800 mb-6">Send us a Message</h3>
+                        {isSubmitted ? (
+                            <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center animate-fade-in">
+                                <CheckCircle className="h-12 w-12 text-green-500 mx-auto mb-4" />
+                                <h3 className="text-lg font-bold text-green-800 mb-2">Thank you for your response!</h3>
+                                <p className="text-green-700">We will get back to you within 24–48 hours.</p>
+                                <button
+                                    onClick={() => setIsSubmitted(false)}
+                                    className="mt-6 text-sm text-green-600 hover:text-green-800 font-medium underline"
+                                >
+                                    Send another message
+                                </button>
                             </div>
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700">Subject <span className="text-red-500">*</span></label>
-                                <input
-                                    type="text"
-                                    name="subject"
-                                    value={formData.subject}
-                                    onChange={handleChange}
-                                    required
-                                    placeholder="Subject"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-blue focus:ring focus:ring-brand-blue focus:ring-opacity-50 p-2 border"
-                                />
-                            </div>
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700">Message <span className="text-red-500">*</span></label>
-                                <textarea
-                                    rows={4}
-                                    name="message"
-                                    value={formData.message}
-                                    onChange={handleChange}
-                                    required
-                                    placeholder="Your Message"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-blue focus:ring focus:ring-brand-blue focus:ring-opacity-50 p-2 border"
-                                ></textarea>
-                            </div>
-                            <button type="submit" className="bg-brand-blue text-white px-6 py-2 rounded-md hover:bg-brand-dark transition flex items-center">
-                                Send Message
-                                <Send className="ml-2 h-4 w-4" />
-                            </button>
-                        </form>
-                    )}
+                        ) : (
+                            <form onSubmit={handleSubmit} className="space-y-6">
+                                <div>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">Name <span className="text-red-500">*</span></label>
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        value={formData.name}
+                                        onChange={handleChange}
+                                        required
+                                        placeholder="Your Name"
+                                        className="w-full rounded-lg border-gray-300 border px-4 py-3 focus:border-brand-blue focus:ring focus:ring-brand-blue/20 transition-all outline-none"
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number <span className="text-red-500">*</span></label>
+                                    <input
+                                        type="tel"
+                                        name="phone"
+                                        value={formData.phone}
+                                        onChange={handleChange}
+                                        required
+                                        placeholder="Your Phone Number"
+                                        className="w-full rounded-lg border-gray-300 border px-4 py-3 focus:border-brand-blue focus:ring focus:ring-brand-blue/20 transition-all outline-none"
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">Email <span className="text-red-500">*</span></label>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        required
+                                        placeholder="Your Email Address"
+                                        className="w-full rounded-lg border-gray-300 border px-4 py-3 focus:border-brand-blue focus:ring focus:ring-brand-blue/20 transition-all outline-none"
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">Subject <span className="text-red-500">*</span></label>
+                                    <input
+                                        type="text"
+                                        name="subject"
+                                        value={formData.subject}
+                                        onChange={handleChange}
+                                        required
+                                        placeholder="Subject"
+                                        className="w-full rounded-lg border-gray-300 border px-4 py-3 focus:border-brand-blue focus:ring focus:ring-brand-blue/20 transition-all outline-none"
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">Message <span className="text-red-500">*</span></label>
+                                    <textarea
+                                        rows={4}
+                                        name="message"
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                        required
+                                        placeholder="How can we help you?"
+                                        className="w-full rounded-lg border-gray-300 border px-4 py-3 focus:border-brand-blue focus:ring focus:ring-brand-blue/20 transition-all outline-none"
+                                    ></textarea>
+                                </div>
+                                <button type="submit" className="w-full bg-brand-blue text-white px-6 py-4 rounded-lg font-bold text-lg hover:bg-brand-dark transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-xl flex items-center justify-center">
+                                    Send Message
+                                    <Send className="ml-2 h-5 w-5" />
+                                </button>
+                            </form>
+                        )}
+                    </motion.div>
                 </div>
+
             </div>
         </div>
     );

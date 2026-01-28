@@ -1,5 +1,8 @@
 
-import { Trophy, Facebook, Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+
+// @ts-ignore
+import logo from '../assets/images/logo 4.png';
 
 const Footer = () => {
     return (
@@ -9,7 +12,7 @@ const Footer = () => {
                     {/* Brand Info */}
                     <div>
                         <div className="flex items-center space-x-2 mb-4">
-                            <Trophy className="h-8 w-8 text-brand-red" />
+                            <img src={logo} alt="T10 Bihar Logo" className="h-12 w-12 object-contain" />
                             <span className="font-bold text-xl">T10 BIHAR</span>
                         </div>
                         <p className="text-gray-300 text-sm">
@@ -40,7 +43,6 @@ const Footer = () => {
                             <div className="flex items-center space-x-3">
                                 <Phone className="h-5 w-5 text-brand-red" />
                                 <span>+91 8757305645,</span>
-
                                 <span>9123480329</span>
                             </div>
                             <div className="flex items-center space-x-3">
@@ -50,8 +52,9 @@ const Footer = () => {
 
                             <div className="flex space-x-4 mt-6">
                                 <a href="#" className="text-gray-400 hover:text-white transition"><Facebook className="h-6 w-6" /></a>
-                                <a href="#" className="text-gray-400 hover:text-white transition"><Instagram className="h-6 w-6" /></a>
-                                <a href="#" className="text-gray-400 hover:text-white transition"><Twitter className="h-6 w-6" /></a>
+                                <a href="https://www.instagram.com/t10tbcab/" className="text-gray-400 hover:text-white transition"><Instagram className="h-6 w-6" /></a>
+                                {/* <a href="#" className="text-gray-400 hover:text-white transition"><Twitter className="h-6 w-6" /></a> */}
+                                <a href="https://www.youtube.com/@T10_SPORTS" className="text-gray-400 hover:text-white transition"><Youtube className="h-6 w-6" /></a>
                             </div>
                         </div>
                     </div>

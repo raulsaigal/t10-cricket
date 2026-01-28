@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { clsx } from 'clsx';
 // @ts-ignore
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/logo 4.png';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +14,8 @@ const Navbar = () => {
         { name: 'About Us', path: '/about' },
         { name: 'Association Members', path: '/members' },
         { name: 'Gallery', path: '/gallery' },
+        { name: 'Media Coverage', path: '/media-coverage' },
+        { name: 'District Association', path: '/district-association' },
         { name: 'Contact Us', path: '/contact' },
     ];
 

@@ -2,15 +2,15 @@
 import { motion } from 'framer-motion';
 
 // @ts-ignore
-import hero1 from '../assets/images/hero1.jpg';
-// @ts-ignore
-import hero2 from '../assets/images/hero2.jpg';
-// @ts-ignore
 import hero3 from '../assets/images/hero3.jpg';
 // @ts-ignore
 import hero4 from '../assets/images/hero4.jpg';
 // @ts-ignore
 import hero5 from '../assets/images/hero5.jpg';
+// @ts-ignore
+import hero2 from '../assets/images/hero2.jpg';
+// @ts-ignore
+import hero1 from '../assets/images/hero1.jpg';
 // @ts-ignore
 import hero6 from '../assets/images/hero6.jpg';
 // @ts-ignore
@@ -28,7 +28,7 @@ const HeroSlider = () => {
             title: "Academy Highlights",
             subtitle: "Training the next generation of stars",
             color: "bg-gradient-to-r from-green-800 to-green-600",
-            image: hero1
+            image: hero3
         },
         {
             id: 2,
@@ -42,35 +42,35 @@ const HeroSlider = () => {
             title: "Team Players",
             subtitle: "Meet our dedicated athletes",
             color: "bg-gradient-to-r from-blue-800 to-blue-600",
-            image: hero3
+            image: hero5
         },
         {
             id: 4,
             title: "Leadership",
             subtitle: "Guided by experienced directors",
             color: "bg-gradient-to-r from-gray-800 to-gray-600",
-            image: hero4
+            image: hero6
         },
         {
             id: 5,
             title: "Community",
             subtitle: "Building a strong cricket family",
             color: "bg-gradient-to-r from-red-800 to-red-600",
-            image: hero5
+            image: hero9
         },
         {
             id: 6,
             title: "Rising Stars",
             subtitle: "Future of Cricket",
             color: "bg-gradient-to-r from-purple-800 to-purple-600",
-            image: hero6
+            image: hero7
         },
         {
             id: 7,
             title: "Victory Moments",
             subtitle: "Cherishing the wins",
             color: "bg-gradient-to-r from-indigo-800 to-indigo-600",
-            image: hero7
+            image: hero1
         },
         // {
         //     id: 8,
@@ -79,13 +79,13 @@ const HeroSlider = () => {
         //     color: "bg-gradient-to-r from-pink-800 to-pink-600",
         //     image: hero8
         // },
-        {
-            id: 9,
-            title: "Game Day",
-            subtitle: "Ready for action",
-            color: "bg-gradient-to-r from-orange-800 to-orange-600",
-            image: hero9
-        }
+        // {
+        //     id: 9,
+        //     title: "Game Day",
+        //     subtitle: "Ready for action",
+        //     color: "bg-gradient-to-r from-orange-800 to-orange-600",
+        //     image: hero9
+        // }
     ];
 
     return (
