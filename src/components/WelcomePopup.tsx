@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { X, ArrowRight } from 'lucide-react';
 
 // Track if popup has been shown in the current page session (resets on refresh)

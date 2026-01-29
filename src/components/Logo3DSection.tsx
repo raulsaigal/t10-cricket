@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 // @ts-ignore
 import logo from '../assets/images/logo 4.png';
 
