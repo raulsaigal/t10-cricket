@@ -1,8 +1,11 @@
 
 import HeroSlider from '../components/HeroSlider';
+import Logo3DSection from '../components/Logo3DSection';
 import StatsSection from '../components/StatsSection';
 import OfferingsSection from '../components/OfferingsSection';
 import EventsSection from '../components/EventsSection';
+import AcademyPartnerSection from '../components/AcademyPartnerSection';
+import WelcomePopup from '../components/WelcomePopup';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
@@ -11,12 +14,16 @@ import SEO from '../components/SEO';
 const Home = () => {
     return (
         <div className="flex flex-col">
+            <WelcomePopup />
             <SEO
                 title="T10 Tennis Ball Cricket Association of Bihar – Bihar Cricket & Tournaments"
                 description="Join the leading Bihar cricket association for tennis ball tournaments, player development, and registrations. Explore winning moments, academy highlights, and register today."
             />
             {/* Hero Section */}
             <HeroSlider />
+
+            {/* 3D Logo Section */}
+            <Logo3DSection />
 
             {/* Leadership Preview Section */}
             <section className="py-20 bg-white">
@@ -31,8 +38,8 @@ const Home = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                         {[
-                            { src: '/members/uploaded_media.jpeg', name: 'Dr. Vikash Kumar', role: ' Vice Chairman - BT10PL & President  T10TBCAB', position: 'top' },
                             { src: '/members/uploaded_media_0_1769412046397.jpg', name: 'Rahul Singh Sarkar', role: 'Chairman - BT10PL & G. Secretary T10TBCAB', position: 'top' },
+                            { src: '/members/uploaded_media.jpeg', name: 'Dr. Vikash Kumar', role: ' Vice Chairman - BT10PL & President  T10TBCAB', position: 'top' },
                             { src: '/members/uploaded_media_2_1769412046397.jpg', name: 'Anisha Kumari', role: 'Treasurer - T10TBCAB', position: 'center' }
                         ].map((leader, index) => (
                             <div key={index} className="group relative overflow-hidden rounded-2xl shadow-xl h-[400px] cursor-pointer">
@@ -69,6 +76,9 @@ const Home = () => {
 
             {/* Events Section */}
             <EventsSection />
+
+            {/* Academy Partner Section */}
+            <AcademyPartnerSection />
 
             {/* Stats Section */}
             <StatsSection />

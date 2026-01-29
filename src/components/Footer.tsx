@@ -38,7 +38,7 @@ const Footer = () => {
                         <div className="space-y-3 text-sm text-gray-300">
                             <div className="flex items-center space-x-3">
                                 <MapPin className="h-5 w-5 text-brand-red" />
-                                <span>Patna, Bihar, India</span>
+                                <span>3rd Floor Parmar Complex, South Ramna Road, Ara, Bihar</span>
                             </div>
                             <div className="flex items-center space-x-3">
                                 <Phone className="h-5 w-5 text-brand-red" />

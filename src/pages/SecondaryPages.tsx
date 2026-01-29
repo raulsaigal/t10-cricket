@@ -34,10 +34,52 @@ import press3 from '../assets/images/press3.jpg';
 import press4 from '../assets/images/press4.jpg';
 // @ts-ignore
 import press5 from '../assets/images/press5.jpg';
+// @ts-ignore
+import press7 from '../assets/images/press7.jpeg';
+// @ts-ignore
+import press8 from '../assets/images/press8.jpeg';
+// @ts-ignore
+import press9 from '../assets/images/press9.jpeg';
+// @ts-ignore
+import press10 from '../assets/images/press10.jpeg';
+// @ts-ignore
+import press11 from '../assets/images/press11.jpeg';
+// @ts-ignore
+import press12 from '../assets/images/press12.jpeg';
+// @ts-ignore
+import press13 from '../assets/images/press13.jpeg';
+// @ts-ignore
+import press14 from '../assets/images/press14.jpeg';
+// @ts-ignore
+import press15 from '../assets/images/press15.jpeg';
+// @ts-ignore
+import press16 from '../assets/images/press16.jpeg';
+// @ts-ignore
+import press17 from '../assets/images/press17.jpeg';
+// @ts-ignore
+import press18 from '../assets/images/press18.jpeg';
+// @ts-ignore
+import press19 from '../assets/images/press19.jpeg';
+// @ts-ignore
+import press20 from '../assets/images/press20.jpeg';
+// @ts-ignore
+import press21 from '../assets/images/press21.jpeg';
+// @ts-ignore
+import press23 from '../assets/images/press23.jpeg';
+// @ts-ignore
+import press24 from '../assets/images/press24.jpeg';
+// @ts-ignore
+import press25 from '../assets/images/press25.jpeg';
+// @ts-ignore
+import press26 from '../assets/images/press26.jpeg';
+// @ts-ignore
+import press27 from '../assets/images/press27.jpeg';
 
 const galleryImages = [
     img1, img2, img3, img4, img5, img6, img7, img8, img9,
-    press1, press2, press3, press4, press5
+    press1, press2, press3, press4, press5, press7, press8, press9, press10,
+    press11, press12, press13, press14, press15, press16, press17, press18,
+    press19, press20, press21, press23, press24, press25, press26, press27
 ];
 
 
@@ -197,12 +239,12 @@ export const About = () => {
 
 const memberImages = [
     { src: '/members/uploaded_media 2.jpeg', name: 'Mr.Alok Anjan', role: 'CHAIRPERSON', position: 'top' },
-    { src: '/members/uploaded_media.jpeg', name: 'Dr. Vikash Kumar', role: 'VICE CHAIRMAN - BT10PL & PRESIDENT T10TBCAB', position: 'top' },
+    // { src: '/members/uploaded_media.jpeg', name: 'Dr. Vikash Kumar', role: 'VICE CHAIRMAN - BT10PL & PRESIDENT T10TBCAB', position: 'top' },
     { src: '/members/uploaded_media_0_1769412998928.jpg', name: 'Majhil Singh', role: 'VICE PRESIDENT', position: 'top' },
-    { src: '', name: 'Dr. Vijay Kumar Gupta', role: 'VICE PRESIDENT', position: 'top' },
-    { src: '/members/uploaded_media_0_1769412046397.jpg', name: 'Rahul Singh Sarkar', role: 'VICE CHAIRMAN - BT10PL & SECRETARY T10TBCAB', position: 'top' },
+    { src: '/members/uploaded_media 5.jpeg', name: 'Dr. Vijay Kumar Gupta', role: 'VICE PRESIDENT', position: 'top' },
+    // { src: '/members/uploaded_media_0_1769412046397.jpg', name: 'Rahul Singh Sarkar', role: 'VICE CHAIRMAN - BT10PL & SECRETARY T10TBCAB', position: 'top' },
     { src: '', name: 'Pankaj Prakash', role: 'JOINT SECRETARY', position: 'top' },
-    { src: '/members/uploaded_media_2_1769412046397.jpg', name: 'Anisha Kumari', role: 'TREASURER T10TBCAB', position: 'center' },
+    // { src: '/members/uploaded_media_2_1769412046397.jpg', name: 'Anisha Kumari', role: 'TREASURER T10TBCAB', position: 'center' },
     { src: '/members/uploaded_media_1.jpeg', name: 'Avinash Singh', role: 'CLUB REPRESENTATIVE', position: 'top' },
     { src: '/members/uploaded_media 4.jpeg', name: 'Nisha Singh', role: 'CLUB REPRESENTATIVE', position: 'top' },
     // { src: '/members/uploaded_media_1.jpeg', name: 'Nisha Singh', role: 'CLUB REPRESENTATIVE', position: 'top' },
@@ -218,8 +260,8 @@ const memberImages = [
     { src: '/members/uploaded_media 3.jpeg', name: 'Anjali Kumari', role: 'EXECUTIVE MEMBER', position: 'center' },
     { src: '', name: 'Pritesh Kumar', role: 'EXECUTIVE MEMBER', position: 'center' },
     { src: '', name: 'Rajveer Kumar', role: 'EXECUTIVE MEMBERS', position: 'center' },
-    { src: '', name: 'Dr. Ramjee Prasad(Patna)', role: 'EXECUTIVE MEMBER', position: 'center' },
-    { src: '', name: 'Jitendra Biraji(Supaul)', role: 'EXECUTIVE MEMBER', position: 'center' },
+    // { src: '', name: 'Dr. Ramjee Prasad(Patna)', role: 'EXECUTIVE MEMBER', position: 'center' },
+    // { src: '', name: 'Jitendra Biraji(Supaul)', role: 'EXECUTIVE MEMBER', position: 'center' },
 ];
 
 export const Members = () => {
@@ -243,7 +285,7 @@ export const Members = () => {
             />
             <div className="max-w-7xl mx-auto px-4">
                 <div className="text-center mb-16">
-                    <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">Association Members</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">Association Committee Members</h1>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
                         Meet the dedicated team behind our success. Together, we drive the vision and future of cricket in Bihar.
                     </p>
@@ -522,7 +564,7 @@ export const Contact = () => {
                         </motion.div>
 
                         {/* Rahul Enterprises Card */}
-                        <motion.div
+                        {/* <motion.div
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
@@ -570,7 +612,7 @@ export const Contact = () => {
                                     </div>
                                 </div>
                             </div>
-                        </motion.div>
+                        </motion.div> */}
                     </div>
 
                     {/* Contact Form */}

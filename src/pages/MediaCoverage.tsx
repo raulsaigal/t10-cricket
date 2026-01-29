@@ -7,7 +7,7 @@ import { ZoomIn, X } from 'lucide-react';
 // @ts-ignore
 import press1 from '../assets/images/press1.jpg';
 // @ts-ignore
-import press2 from '../assets/images/press2.jpg';
+// import press2 from '../assets/images/press2.jpg';
 // @ts-ignore
 import press3 from '../assets/images/press3.jpg';
 // @ts-ignore
@@ -41,7 +41,7 @@ import press27 from '../assets/images/press27.jpeg';
 
 const mediaItems = [
     { src: press1, },
-    { src: press2, },
+    // { src: press2, },
     { src: press10, },
     { src: press3, },
     { src: press4, },
